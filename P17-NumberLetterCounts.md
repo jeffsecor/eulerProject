@@ -10,6 +10,7 @@ then write a final function for the entire word.
 
 
 for the ones place
+
 ---
 def first(digit):
 	if digit=='0':
@@ -34,7 +35,8 @@ def first(digit):
 		return 'nine'
 ---
 
-#for the tens place (not the teens, that is a special case)
+for the tens place (not the teens, that is a special case)
+
 ---
 def second(digit):
 	if digit=='2':
@@ -59,6 +61,7 @@ def second(digit):
 
 
 for the teens
+
 ---
  def teens(digit):
 	if digit=='1':
@@ -82,11 +85,18 @@ for the teens
 	elif digit=='0':
 		return 'ten'
 ---    
-#the hundreds case is easy, we just add the words "hundred and" to our existing function for ones and will strip the "and" where needed
+
+
+the hundreds case is easy, we just add the words "hundred and" to our existing function for ones and will strip the "and" where needed
+
+---
 def third(digit):
 	return first(digit)+'hundredand'
-  
-#all together now
+---  
+
+
+putting this all together now into a function
+---
 def word(number):
 	text=''
 	
