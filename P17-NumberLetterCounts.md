@@ -119,9 +119,9 @@ def word(number):
 	if len(num_list)>2:
 		if num_list[-1]=='0':
 			#this strips the "and" from the centennial beginning 
-      text=third(num_list[-3])[:-3]+text
+     			 text=third(num_list[-3])[:-3]+text
 		else:
-			text=third(num_list[-3])+text
+			 text=third(num_list[-3])+text
 	return text
   ```
   Then using numpys array function and a list comprehension, wrapped in numpys cumsum
