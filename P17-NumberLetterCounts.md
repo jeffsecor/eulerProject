@@ -8,8 +8,9 @@ The programming way is entertaining, although a bit cumbersome.  For each number
 affix the appropriate text.  Then we can write a comprehension list to get all the numbers.  I found it was easiest to write a function for each digit place,
 then write a final function for the entire word.  
 
+
+for the ones place
 ---
-#for the ones place
 def first(digit):
 	if digit=='0':
 		return ''
@@ -34,6 +35,7 @@ def first(digit):
 ---
 
 #for the tens place (not the teens, that is a special case)
+---
 def second(digit):
 	if digit=='2':
 		return 'twenty'
@@ -53,8 +55,11 @@ def second(digit):
 		return 'ninety'
 	elif digit=='0':
 		return ''
-    
-#for the teens
+ ---
+
+
+for the teens
+---
  def teens(digit):
 	if digit=='1':
 		return 'eleven'
@@ -76,7 +81,7 @@ def second(digit):
 		return 'nineteen'
 	elif digit=='0':
 		return 'ten'
-    
+---    
 #the hundreds case is easy, we just add the words "hundred and" to our existing function for ones and will strip the "and" where needed
 def third(digit):
 	return first(digit)+'hundredand'
