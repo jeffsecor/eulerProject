@@ -11,7 +11,7 @@ then write a final function for the entire word.
 
 for the ones place
 
----
+'''
 def first(digit):
 	if digit=='0':
 		return ''
@@ -33,7 +33,7 @@ def first(digit):
 		return 'eight'
 	elif digit=='9':
 		return 'nine'
----
+'''
 
 for the tens place (not the teens, that is a special case)
 
