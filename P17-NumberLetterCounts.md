@@ -117,7 +117,7 @@ def word(number):
 	if len(num_list)>1:
 		text=second(num_list[-2])+text
 	if len(num_list)>2:
-		if num_list[-1]=='0':
+		if num_list[-1]=='0' and num_list[-2]=='0':
 			#this strips the "and" from the centennial beginning 
      			 text=third(num_list[-3])[:-3]+text
 		else:
