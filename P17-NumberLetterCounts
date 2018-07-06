@@ -8,7 +8,7 @@ The programming way is entertaining, although a bit cumbersome.  For each number
 affix the appropriate text.  Then we can write a comprehension list to get all the numbers.  I found it was easiest to write a function for each digit place,
 then write a final function for the entire word.  
 
-'''
+---
 #for the ones place
 def first(digit):
 	if digit=='0':
@@ -31,7 +31,7 @@ def first(digit):
 		return 'eight'
 	elif digit=='9':
 		return 'nine'
-'''
+---
 
 #for the tens place (not the teens, that is a special case)
 def second(digit):
