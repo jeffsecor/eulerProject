@@ -11,7 +11,7 @@ then write a final function for the entire word.
 
 for the ones place
 
-'''
+```
 def first(digit):
 	if digit=='0':
 		return ''
@@ -33,11 +33,11 @@ def first(digit):
 		return 'eight'
 	elif digit=='9':
 		return 'nine'
-'''
+```
 
 for the tens place (not the teens, that is a special case)
 
----
+```
 def second(digit):
 	if digit=='2':
 		return 'twenty'
@@ -57,12 +57,12 @@ def second(digit):
 		return 'ninety'
 	elif digit=='0':
 		return ''
- ---
+ ```
 
 
 for the teens
 
----
+```
  def teens(digit):
 	if digit=='1':
 		return 'eleven'
@@ -84,19 +84,19 @@ for the teens
 		return 'nineteen'
 	elif digit=='0':
 		return 'ten'
----    
+```    
 
 
 the hundreds case is easy, we just add the words "hundred and" to our existing function for ones and will strip the "and" where needed
 
----
+```
 def third(digit):
 	return first(digit)+'hundredand'
----  
+```  
 
 
 putting this all together now into a function
----
+```
 def word(number):
 	text=''
 	
@@ -123,11 +123,13 @@ def word(number):
 		else:
 			text=third(num_list[-3])+text
 	return text
-  
+  ```
   Then using numpys array function and a list comprehension, wrapped in numpys cumsum
-  np.cumsum(np.array([len(word(i)) for i in range(1,1000)]))
   
-  This last element is the number we need, and dont forget then to add the length for the word "onethousand" since that was not part of the 
-  programming.
+  ```
+  np.cumsum(np.array([len(word(i)) for i in range(1,1000)]))
+  ```
+  
+  The last element of this array is the number we need, and dont forget then to add the length for the word "onethousand" since that was not part of the code.
     
     
