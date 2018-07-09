@@ -2,7 +2,7 @@
 ## Multiples of 3 and 5
 ### -Python-
 
-This is a simple problem to start the coding challenge.  The main concept is to use the modulo operator, and that variable comparison uses double equal signs.  An one line solution using a python _"list comprehension"_  is 
+This is a simple problem to start the coding challenge.  The main concept is to use the modulo operator, and that variable comparison uses double equal signs.  A single line solution using a python  list comprehension is 
 ```
 print(sum([x for x in range(1,1000) if x%3==0 or x%5==0 ]))
 
